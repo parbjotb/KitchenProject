@@ -1,0 +1,30 @@
+name,type,manufacturer,amount,price,description
+Knife,"Tool, Utensil",Corelle,100,5.25,A knife is used to cut things and it is very sharp
+Pan,Tool,Tfal,100,10.25,A pan is a tool you can cook food in
+Pot,Tool,Tfal,100,11.5,A pot is something you can make sauces in
+Spoon,"Utensil, Tool",Corelle,100,2.25,You can use a spoon to pick things up
+Fork,"Utensil, Tool",Corelle,100,11.25,You could use a fork to eat spaghetti
+Bowl,Utensil,Corelle,100,80,A bowl is used to hold food
+Plate,"Utensil, Tool",Corelle,100,20,A plate can also be used to hold food
+Blender,Appliance,SharpCo,100,500,Blender is used to puree items
+Coffee Maker,Appliance,SharpCo,100,250,Coffee maker is needed to produce coffee
+Bucket,Tool,Tfal,100,12.25,Bucket can hold many kitchen items
+Towel,Tool,Tfal,100,10.5,Towel is needed to dry dishes
+Soap,Tool,Tfal,100,4.5,Soap is used to clean the dishes
+Baking Soda,Ingredient,SharpCo,100,1.25,Baking Soda is used for cleaning
+Vinegar,Ingredient,SharpCo,100,1.5,Vinegar can be used for many purposes
+Generic Item,Tool,Tfal,100,1.25,Generic Item for the database
+Car,Tool,Tfal,100,2.35,Car can take you anywhere
+Sink,"Appliance, Tool",SharpCo,100,6.25,Sink to clean your dishes
+Cupboard,Appliance,SharpCo,100,8.15,Cupboard to store your dishes
+Cup,Utensil,Corelle,100,4.2,Cup to drink water
+Glass,Utensil,Corelle,100,1.5,Glass to drink juice
+Toy,Utensil,Corelle,100,1,Toy to play with and distract your child
+Spork,Utensil,Corelle,100,1,Sporks are like spoons and forks together
+Ladle,Tool,Tfal,100,5.75,Ladle for your soup
+Strainer,Tool,Tfal,100,5.85,Strainer to get impurities out
+Sieve,Tool,Tfal,100,3.5,"Sieve is just like a strainer, they do the same"
+Dishwasher,Appliance,SharpCo,100,950.5,Dishwasher to automatically clean dishes
+Dishes,Utensil,Corelle,100,25.25,Dishes you can eat off
+Random Item,Tool,Tfal,100,10.15,This is a random item I added
+Thirty Item,Utensil,Corelle,100,30.25,This is the thirtieth item
