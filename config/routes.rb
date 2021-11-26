@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pages
   # get 'products/index'
   # get 'products/show'
   # get 'manufacturers/index'

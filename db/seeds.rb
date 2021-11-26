@@ -1,5 +1,6 @@
 require "csv"
 
+Page.delete_all
 Product.delete_all
 Manufacturer.delete_all
 
@@ -31,5 +32,16 @@ products.each do |p|
   end
 end
 
+Page.create(
+  title:     "Contact Us",
+  content:   "Email me at parbjotb@gmail.com if you have any questions about the items",
+  permalink: "contact"
+)
+
+Page.create(
+  title:     "About the Data",
+  content:   "What's with all the questions, officer?",
+  permalink: "about_the_data"
+)
 puts "Created #{Manufacturer.count} manufacturers"
 puts "Created #{Product.count} products"
