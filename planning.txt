@@ -1,0 +1,15 @@
+products (think of a better name) table:
+ - fields it has (id, name, price, description, manufacturer_id)
+
+Manufacturer (product creator) table:
+  - fields it has (id, name) need something to link to products
+  = 1-to-many wtih product
+  - product can have 1 manufacturer, manufacturer can have many products
+
+Product_types table (joiner table):
+  - fields it has (product_id, type_id)
+
+Type (product type, think of a better name) table:
+  - this will be a many-to-many with products
+  - product can have many "types", type can have many products
+  - id, Name
