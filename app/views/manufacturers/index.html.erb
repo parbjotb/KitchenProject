@@ -1,2 +1,9 @@
-<h1>Manufacturers#index</h1>
-<p>Find me in app/views/manufacturers/index.html.erb</p>
+<h2 class= "title is-2">Manufacturers</h2>
+<ol class="ml-5">
+  <% @manufacturers.each do | manufacturer | %>
+    <li>
+      <%= link_to manufacturer.name, manufacturer %>
+      <em>(<%= pluralize manufacturer.product_count, "Product" %>)</em>
+    </li>
+  <% end %>
+</ol>
