@@ -6,4 +6,8 @@ class ManufacturersController < ApplicationController
   def show
     @manufacturer = Manufacturer.find(params[:id])
   end
+
+  def about
+    # just setting the path, can leave this empty for now
+  end
 end

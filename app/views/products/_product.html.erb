@@ -1,0 +1,29 @@
+<h2 class= "title is-2">
+  <% if show_link %>
+    <%= link_to product.name, product %>
+  <% else %>
+    <%= product.name %>
+  <% end %>
+</h2>
+<article class="message is-dark">
+<div class="message-header">
+  <p>Product Description: </p>
+</div>
+<% if single_page %>
+  <div class="message-body">
+    <p class="mb-5"><%= product.description %></p>
+  </div>
+<% else %>
+  <p>Click on the product name to view description</p>
+<% end %>
+</article>
+
+
+<p><strong>Price: </strong><%= product.price %></p>
+
+<p>
+  <strong>Product manufacturer: </strong>
+  <%= link_to product.manufacturer.name, product.manufacturer %>
+</p>
+
+<hr>

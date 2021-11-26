@@ -7,4 +7,8 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
   end
+
+  def about
+    # just setting the path, can leave this empty for now
+  end
 end
