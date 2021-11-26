@@ -1,1 +1,17 @@
-<h2><%= @product.name %></h2>
+<h2 class= "title is-2"><%= @product.name %></h2>
+<article class="message is-dark">
+<div class="message-header">
+  <p>Product Description: </p>
+</div>
+<div class="message-body">
+  <p class="mb-5"><%= @product.description %></p>
+</div>
+</article>
+
+
+<p><strong>Price: </strong><%= @product.price %></p>
+
+<p>
+  <strong>Product manufacturer: </strong>
+  <%= link_to @product.manufacturer.name, @product.manufacturer %>
+</p>
