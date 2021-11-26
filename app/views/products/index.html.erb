@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<h2 class= "title is-2">Products</h2>
 <ol>
   <% @products.each do | product | %>
     <li><%= link_to product.name, product %> was developed by <%= link_to product.manufacturer.name, product.manufacturer %></li>
