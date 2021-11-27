@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.includes(:manufacturer).all
+    # @products = Product.includes(:manufacturer).all
+    @products = Product.page(params[:page])
     @manufacturers = Manufacturer.ordered_by_products.limit(15)
   end
 
