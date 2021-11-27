@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'categories/index'
+  get 'categories/show'
   resources :pages, except: [:show]
   get "pages/:permalink" => "pages#permalink", as: "permalink" # this is equivalent to permalink_path
   # get 'products/index'
