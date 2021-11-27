@@ -1,10 +1,12 @@
 require "csv"
 
 Page.delete_all
+ProductCategory.delete_all
+Category.delete_all
 Product.delete_all
 Manufacturer.delete_all
 
-filename = Rails.root.join("db/kitchen_products.csv")
+filename = Rails.root.join("db/products.csv")
 
 puts "Loading products from csv file: #{filename}"
 
@@ -25,8 +27,26 @@ products.each do |p|
       description: p["description"]
     )
 
-    # this is like saying product && product.valid?
-    puts "Invalid product #{p['name']}" unless product&.valid?
+    if product&.valid?
+      # if the product exists and is valid, then we go through the line on the csv
+      # and get all the categories and loop through them
+      # if we just used the comma, we'll get a SPACE character in there. :(
+      # the map(&:string), will take all the values from the split and remove all space characters!
+      # The & symbol in this context says: collection.map { | collection_item | collection_item.strip }
+      # called a TWO PROC... takes the symbol and turns it into the above!
+      # categories = p["category"].split(",").map(&:strip)
+      categories = p["category"].split(",").map(&:strip)
+
+      categories.each do |category_name|
+        category = Category.find_or_create_by(name: category_name)
+
+        # since the joiner table references the other 2 tables, we can just pass the objects
+        ProductCategory.create(product: product, category: category)
+      end
+    else
+      # this is like saying product && product.valid?
+      puts "Invalid product #{p['name']}"
+    end
   else
     puts "Invalid Manufacturer, #{p['manufacturer']} for product: #{p['name']}"
   end
@@ -45,3 +65,5 @@ Page.create(
 )
 puts "Created #{Manufacturer.count} manufacturers"
 puts "Created #{Product.count} products"
+puts "Created #{Category.count} categories"
+puts "Created #{ProductCategory.count} product categories"

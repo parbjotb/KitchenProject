@@ -1,0 +1,101 @@
+name,category,manufacturer,amount,price,description
+Knife,"Tool, Utensil",Corelle,100,5.25,A knife is used to cut things and it is very sharp
+Pan,Tool,Tfal,100,10.25,A pan is a tool you can cook food in
+Pot,Tool,Tfal,100,11.5,A pot is something you can make sauces in
+Spoon,"Utensil, Tool",Corelle,100,2.25,You can use a spoon to pick things up
+Fork,"Utensil, Tool",Corelle,100,11.25,You could use a fork to eat spaghetti
+Bowl,Utensil,Corelle,100,80,A bowl is used to hold food
+Plate,"Utensil, Tool",Corelle,100,20,A plate can also be used to hold food
+Blender,Appliance,SharpCo,100,500,Blender is used to puree items
+Coffee Maker,Appliance,SharpCo,100,250,Coffee maker is needed to produce coffee
+Bucket,Tool,Tfal,100,12.25,Bucket can hold many kitchen items
+Towel,Tool,Tfal,100,10.5,Towel is needed to dry dishes
+Soap,Tool,Tfal,100,4.5,Soap is used to clean the dishes
+Baking Soda,Ingredient,SharpCo,100,1.25,Baking Soda is used for cleaning
+Vinegar,Ingredient,SharpCo,100,1.5,Vinegar can be used for many purposes
+Generic Item,Tool,Tfal,100,1.25,Generic Item for the database
+Car,Tool,Tfal,100,2.35,Car can take you anywhere
+Sink,"Appliance, Tool",SharpCo,100,6.25,Sink to clean your dishes
+Cupboard,Appliance,SharpCo,100,8.15,Cupboard to store your dishes
+Cup,Utensil,Corelle,100,4.2,Cup to drink water
+Glass,Utensil,Corelle,100,1.5,Glass to drink juice
+Toy,Utensil,Corelle,100,1,Toy to play with and distract your child
+Spork,Utensil,Corelle,100,1,Sporks are like spoons and forks together
+Ladle,Tool,Tfal,100,5.75,Ladle for your soup
+Strainer,Tool,Tfal,100,5.85,Strainer to get impurities out
+Sieve,Tool,Tfal,100,3.5,"Sieve is just like a strainer, they do the same"
+Dishwasher,Appliance,SharpCo,100,950.5,Dishwasher to automatically clean dishes
+Dishes,Utensil,Corelle,100,25.25,Dishes you can eat off
+Random Item,Tool,Tfal,100,10.15,This is a random item I added
+Thirty Item,Utensil,Corelle,100,30.25,This is the thirtieth item
+Ninja Item,"Appliance, Tool",Ninja,100,250.5,This is a ninja item
+Quiz Post,"Tool, Utensil",Corelle,100,135.25,A description for this quiz item
+Weird Thing,"Tool, Utensil",Corelle,100,175.8,A description for this weird item
+Awesome Thing,"Tool, Utensil",Corelle,100,50.5,A description for this awesome item
+Ergonomic Chair,"Tool, Utensil",Corelle,100,100.1,A description for this ergonomic item
+Secretlabs Chair,"Tool, Utensil",Corelle,100,699.75,A description for this secretlabs item
+Kitchen Island,"Tool, Utensil",Corelle,100,1200.5,A description for this kitchen item
+Tupperware,"Tool, Utensil",Corelle,100,10.1,A description for this tupperware item
+Silverware,"Tool, Utensil",Corelle,100,10.1,A description for this silverware item
+Glassware,"Tool, Utensil",Corelle,100,10.1,A description for this glassware item
+Fine China,"Tool, Utensil",Corelle,100,10.1,A description for this fine item
+Salad Fork,"Appliance, Tool",Corelle,100,10.1,A description for this salad item
+Salt,"Appliance, Tool",Corelle,100,10.1,A description for this salt item
+Pepper,"Appliance, Tool",Corelle,100,10.1,A description for this pepper item
+Red Pepper,"Appliance, Tool",Corelle,100,10.1,A description for this red item
+Mouse Pad,"Appliance, Tool",Tfal,100,10.1,A description for this mouse item
+Wireless Mouse,"Appliance, Tool",Tfal,100,10.1,A description for this wireless item
+Headphones,"Appliance, Tool",Tfal,100,10.1,A description for this headphones item
+Microfiber Cloth,"Appliance, Tool",Tfal,100,10.1,A description for this microfiber item
+Nailclipper,"Appliance, Tool",Tfal,100,10.1,A description for this nailclipper item
+Cellphone,"Appliance, Tool",Tfal,100,10.1,A description for this cellphone item
+Cough Syrup,"Appliance, Utensil",Tfal,100,10.1,A description for this cough item
+Benadryl,"Appliance, Utensil",Tfal,100,10.1,A description for this benadryl item
+Shaving Cream,"Appliance, Utensil",Tfal,100,10.1,A description for this shaving item
+Tylenol,"Appliance, Utensil",Tfal,100,10.1,A description for this tylenol item
+Advil,"Appliance, Utensil",Tfal,100,10.1,A description for this advil item
+Vitamin,"Appliance, Utensil",Tfal,100,10.1,A description for this vitamin item
+Prescription,"Appliance, Utensil",Tfal,100,10.1,A description for this prescription item
+Lamp,"Appliance, Utensil",Tfal,100,10.1,A description for this lamp item
+Skylight,"Appliance, Utensil",Ninja,100,10.1,A description for this skylight item
+Window,"Appliance, Utensil",Ninja,100,10.1,A description for this window item
+Orange,"Appliance, Utensil",Ninja,100,10.1,A description for this orange item
+Alcohol,"Appliance, Utensil",Ninja,100,10.1,A description for this alcohol item
+Island Stool,"Appliance, Utensil",Ninja,100,10.1,A description for this island item
+Product SixFour,"Appliance, Utensil",Ninja,100,10.1,A description for this product item
+Window Screen,"Utensil, Ingredient",Ninja,100,10.1,A description for this window item
+Window Pane,"Utensil, Ingredient",Ninja,100,10.1,A description for this window item
+Door,"Utensil, Ingredient",Ninja,100,10.1,A description for this door item
+Door Frame,"Utensil, Ingredient",Ninja,100,10.1,A description for this door item
+Door Knob,"Utensil, Ingredient",Ninja,100,10.1,A description for this door item
+Window Trim,"Utensil, Ingredient",Ninja,100,10.1,A description for this window item
+Aftershave,"Utensil, Ingredient",Ninja,100,10.1,A description for this aftershave item
+Lotion,"Utensil, Ingredient",Ninja,100,10.1,A description for this lotion item
+Moisturizer,"Utensil, Ingredient",Ninja,100,10.1,A description for this moisturizer item
+Outlet,"Utensil, Ingredient",Ninja,100,10.1,A description for this outlet item
+Vacuum,"Utensil, Ingredient",Ninja,100,10.1,A description for this vacuum item
+Dawn Liquid,"Utensil, Ingredient",Ninja,100,10.1,A description for this dawn item
+Sanitizer,"Utensil, Ingredient",Ninja,100,10.1,A description for this sanitizer item
+Lysol,"Utensil, Ingredient",Ninja,100,10.1,A description for this lysol item
+Purell,"Utensil, Ingredient",Ninja,100,10.1,A description for this purell item
+Smartphone,"Utensil, Ingredient",Ninja,100,10.1,A description for this smartphone item
+Football,"Utensil, Ingredient",Ninja,100,10.1,A description for this football item
+Soccerball,"Utensil, Ingredient",Ninja,100,10.1,A description for this soccerball item
+Baseball,"Utensil, Ingredient",SharpCo,100,10.1,A description for this baseball item
+Basketball,Tool,SharpCo,100,10.1,A description for this basketball item
+Bowling Ball,Tool,SharpCo,100,10.1,A description for this bowling item
+Bowling Pin,Tool,SharpCo,100,10.1,A description for this bowling item
+Frisbee,Tool,SharpCo,100,10.1,A description for this frisbee item
+Shotput,Tool,SharpCo,100,10.1,A description for this shotput item
+Wristpad,Tool,SharpCo,100,10.1,A description for this wristpad item
+Keyboard,Ingredient,SharpCo,100,10.1,A description for this keyboard item
+Drawers,Ingredient,SharpCo,100,50.65,A description for this drawers item
+Toothpaste,Ingredient,SharpCo,100,49.95,A description for this toothpaste item
+Toothbrush,Ingredient,SharpCo,100,36.65,A description for this toothbrush item
+Scissors,Appliance,SharpCo,100,98.45,A description for this scissors item
+Shoelaces,Appliance,SharpCo,100,12.25,A description for this shoelaces item
+Sneakers,Appliance,SharpCo,100,80.25,A description for this sneakers item
+Video Game,Appliance,SharpCo,100,80.99,A description for this video item
+Souvenir,Appliance,SharpCo,100,20.25,A description for this souvenir item
+Hardhat,Appliance,SharpCo,100,100.4,A description for this hardhat item
+Visibility Vest,Appliance,SharpCo,100,250.25,A description for this visibility item

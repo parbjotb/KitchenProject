@@ -11,4 +11,9 @@ class ProductsController < ApplicationController
   def about
     # just setting the path, can leave this empty for now
   end
+
+  def search
+    wildcard_search = "%#{params[:keywords]}%"
+    @products = Product.where("name LIKE ?", wildcard_search)
+  end
 end
