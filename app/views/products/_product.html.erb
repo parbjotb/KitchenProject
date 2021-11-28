@@ -1,38 +1,21 @@
 
 
-<div class="column">
-  <div class="card">
-    <div class="card-content">
-      <p class="title">
+<aside>
+  <% if product.image.present? %>
+      <p><%= image_tag product.image.variant(resize_to_limit: [285, 285]).processed  %></p>
+    <% end %>
+    <p class="title">
         <% if show_link %>
           <%= link_to product.name, product %>
         <% else %>
           <%= product.name %>
         <% end %>
       </p>
-      <% if single_page %>
+    <p>Price: <%= product.price %></p>
+     <% if single_page %>
         <p class="mb-5"><%= product.description %></p>
       <% else %>
         <p>Click on the product name to view description</p>
       <% end %>
-    </div>
-    <footer class="card-footer">
-      <p class="card-footer-item">
-        Price: <br><%= product.price %>
-      </p>
-    </footer>
-  </div>
-    <% if product.image.present? %>
+</aside>
 
-      <div class="card-image">
-
-        <figure class="image">
-
-          <%= image_tag product.image %>
-
-        </figure>
-
-      </div>
-
-    <% end %>
-</div>
