@@ -27,6 +27,13 @@ products.each do |p|
       description: p["description"]
     )
 
+    query = URI.encode_www_form_component([product.name, manufacturer.name].join(","))
+    downloaded_image = URI.open("https://source.unsplash.com/600x600/?#{query}")
+    product.image.attach(io:       downloaded_image,
+                         filename: "m-#{[product.name,
+                                         manufacturer.name].join('-')}.jpg")
+    sleep(1)
+
     if product&.valid?
       # if the product exists and is valid, then we go through the line on the csv
       # and get all the categories and loop through them

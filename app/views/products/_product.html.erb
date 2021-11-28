@@ -25,5 +25,11 @@
   <strong>Product manufacturer: </strong>
   <%= link_to product.manufacturer.name, product.manufacturer %>
 </p>
-
+<% if product.image.present? %>
+  <div class="card-image">
+    <figure class="image">
+      <%= image_tag product.image %>
+    </figure>
+  </div>
+<% end %>
 <hr>

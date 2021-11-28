@@ -4,7 +4,17 @@ ActiveAdmin.register Product do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :name, :price, :description, :manufacturer_id
+  permit_params :name, :price, :description, :manufacturer_id, :image
+
+  form do |f|
+    f.semantic_errors # shows errors on :base
+    f.inputs          # builds an input field for every attribute
+    # let's add this piece:
+    f.inputs do
+      f.input :image, as: :file, hint: f.object.image.present? ? image_tag(f.object.image) : ""
+    end
+    f.actions # adds the 'Submit' and 'Cancel' buttons
+  end
   #
   # or
   #
