@@ -17,5 +17,17 @@
       <% else %>
         <p>Click on the product name to view description</p>
       <% end %>
+
+       <% if cart.include?(product) %>
+      <%= button_to cart_path(product), method: :delete do %>
+        Remove From Cart
+      <% end %>
+    <% else %>
+      <%= form_with  url: cart_index_path, method: :post do %>
+      <%# this line below says id equals id of the product, hidden rails magic to add to cart %>
+        <%= hidden_field_tag(:id, product.id) %>
+        <%= button_tag 'Add to Cart' %>
+      <% end %>
+    <% end %>
 </aside>
 

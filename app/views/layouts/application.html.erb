@@ -13,6 +13,9 @@
   </head>
 
   <body>
+  <% if flash[:notice] %>
+        <p><%= flash[:notice] %></p>
+      <% end %>
 <section class="section">
   <div class="btn-group btn-group-lg" role="group">
       <h1 class="btn btn-secondary"><%= link_to "Shop", root_path %></h1>
