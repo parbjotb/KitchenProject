@@ -1,5 +1,5 @@
-
-
+<% name = current_user.present? ? current_user.email : ' '%>
+<h3>Welcome to the shop <%= name %></h3>
 <aside>
   <% if product.image.present? %>
       <p><%= image_tag product.image.variant(resize_to_limit: [285, 285]).processed  %></p>

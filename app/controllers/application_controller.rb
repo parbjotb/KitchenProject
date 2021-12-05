@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :initialize_session
+  before_action :initialize_session, :load_categories # current_customer
   helper_method :cms_pages, :cart
   # by making it a helper method, we can call from anywhere
 
@@ -17,5 +17,9 @@ class ApplicationController < ActionController::Base
 
   def cms_pages
     Page.all
+  end
+
+  def load_categories
+    @c = Manufacturer.all.map { |u| [u.name, u.id] }
   end
 end

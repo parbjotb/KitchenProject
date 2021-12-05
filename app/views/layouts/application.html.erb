@@ -14,27 +14,23 @@
 
   <body>
 
-<section class="section">
-  <div class="btn-group btn-group-lg" role="group">
-      <h1 class="btn btn-secondary"><%= link_to "Shop", root_path %></h1>
-      <h1 class="btn btn-secondary"><%= link_to "Categories", categories_path %></h1>
-      <h1 class="btn btn-secondary"><%= link_to "Suppliers", manufacturers_path %></h1>
-  </div>
+  <%= render 'common/navbar' %>
 
   <div class="container">
     <h2 class="title is-2"><%= link_to "Kitchen Ecommerce", root_path %></h2>
   </div>
     <body>
-  <%= form_with(url: search_products_path, method: :get, local: true, class: 'mt-5 mb-5') do %>
-    <div class="field is-grouped mb-5">
-      <div class="control is-expanded">
-        <%= text_field_tag(:keywords, nil, class: "input", placeholder: "Search available products") %>
-      </div>
-      <div class="control">
-        <%= submit_tag("Search", class: "button is-info") %>
-      </div>
-    </div>
-  <% end %>
+  <%= form_with(url: search_products_path, local: true, method: "get", class: 'd-flex') do %>
+          <div class="field is-grouped mb-5">
+            <div class="control is-expanded">
+              <%= text_field_tag(:search_term, nil, class: 'form-control', placeholder: 'Search Products') %>
+              <%= select_tag(:id, options_for_select(@c),{ :include_blank => "Select Category"}) %>
+            </div>
+            <div class="control">
+              <%= submit_tag("Search", class: "btn btn-warning") %>
+            </div>
+          </div>
+        <% end %>
     <nav>
         <%= link_to image_tag("add-to-basket.png", width:60), root_path %>
         <ul>
