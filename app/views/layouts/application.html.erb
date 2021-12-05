@@ -36,7 +36,7 @@
     </div>
   <% end %>
     <nav>
-        <%= link_to image_tag("erd.PNG", width:60), root_path %>
+        <%= link_to image_tag("add-to-basket.png", width:60), root_path %>
         <ul>
           <li>
             Cart
@@ -57,8 +57,28 @@
         <p><%= flash[:notice] %></p>
       <% end %>
   <%= yield %>
-
+        <details>
+        <summary>
+            Cart
+            <% if cart.present? %>
+              <sup><%= cart.size %></sup>
+            <% end %>
+        </summary>
+        <% if cart.present? %>
+          <ul>
+            <% cart.each do |product| %>
+              <li>
+                <%= product.name %> <%= link_to '❌', cart_path(product), method: :delete %>
+              </li>
+            <% end %>
+          </ul>
+        <% else %>
+          <p>No items in your cart.</p>
+        <% end %>
+      </details>
     <%= render partial: 'common/footer' %>
+
+
 
 </section>
 </body>
