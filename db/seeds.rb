@@ -24,7 +24,8 @@ products.each do |p|
     product = manufacturer.products.create(
       name:        p["name"],
       price:       p["price"],
-      description: p["description"]
+      description: p["description"],
+      quantity:    p["amount"]
     )
 
     query = URI.encode_www_form_component([product.name, manufacturer.name].join(","))

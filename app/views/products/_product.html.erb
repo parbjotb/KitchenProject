@@ -14,8 +14,9 @@
     <p>Price: <%= product.price %></p>
      <% if single_page %>
         <p class="mb-5"><%= product.description %></p>
+        <p class="mb-5">Quantity in stock:<%= product.quantity %></p>
       <% else %>
-        <p>Click on the product name to view description</p>
+        <p>Click on the product name to view description and quantity in stock</p>
       <% end %>
 
        <% if cart.include?(product) %>
