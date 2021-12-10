@@ -33,4 +33,10 @@ class CartController < ApplicationController
     flash[:notice] = " - #{product.name} removed from cart."
     redirect_to root_path
   end
+
+  def show
+    # @cart = Cart.find(params[:id])
+    logger.debug("Items in cart:" + session[:shopping_cart].inspect)
+    @items_in_cart = session[:shopping_cart].count
+  end
 end
