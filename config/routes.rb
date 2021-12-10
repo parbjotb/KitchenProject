@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :categories, only: %i[index show]
   resources :pages, except: [:show]
   resources :cart, only: %i[create destroy]
-  get "/cart", to: "cart#show"
+  get "/cart", to: "cart#show", as: "show_cart"
 
   get "pages/:permalink" => "pages#permalink", as: "permalink" # this is equivalent to permalink_path
   # get 'products/index'
