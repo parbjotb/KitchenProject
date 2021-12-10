@@ -1,11 +1,1 @@
 <h3>Number of items in cart: <%= @items_in_cart %></h3>
-<% if cart.present? %>
-              <sup><%= cart.size %></sup>
-              <ul>
-                <% cart.each do |product| %>
-                  <li>
-                    <%= product.name %> <%= link_to '➖', cart_path(product), method: :delete %>
-                  </li>
-                <% end %>
-              </ul>
-            <% end %>
