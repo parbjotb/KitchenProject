@@ -1,4 +1,8 @@
-<h2 class= "title is-2">Products</h2>
+<div class="container">
+  <div class="row justify-content-center">
+    <h2 class= "display-2">Products</h2>
+  </div>
+</div>
 
 <%= render partial: @products, locals: {show_link: true, single_page: false } %>
 <%= paginate @products %>
