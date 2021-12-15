@@ -11,10 +11,10 @@
           <%= product.name %>
         <% end %>
       </p>
-    <p>Price: <%= product.price %></p>
+    <p class="h5">Price: <%= product.price %></p>
      <% if single_page %>
-        <p class="mb-5"><%= product.description %></p>
-        <p class="mb-5">Quantity in stock:<%= product.quantity %></p>
+        <p class="h6"><%= product.description %></p>
+        <p class="h6">Quantity in stock:<%= product.quantity %></p>
       <% else %>
         <p>Click on the product name to view description and quantity in stock</p>
       <% end %>
@@ -31,16 +31,4 @@
       <% end %>
     <% end %>
 </aside>
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src=@product.image alt="product image">
-  <div class="card-body">
-    <h5 class="card-title">
-      <% if show_link %>
-          <%= link_to product.name, product %>
-      <% else %>
-          <%= product.name %>
-      <% end %></h5>
-    <p class="card-text"><%= @product.price %></p>
-    <p class="card-text"><%= @product.quantity %></p>
-  </div>
-</div>
+
