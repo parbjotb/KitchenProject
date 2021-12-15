@@ -34,7 +34,12 @@
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src=@product.image alt="product image">
   <div class="card-body">
-    <h5 class="card-title"><%= @product.name %></h5>
+    <h5 class="card-title">
+      <% if show_link %>
+          <%= link_to product.name, product %>
+      <% else %>
+          <%= product.name %>
+      <% end %></h5>
     <p class="card-text"><%= @product.price %></p>
     <p class="card-text"><%= @product.quantity %></p>
   </div>
