@@ -4,7 +4,7 @@
   <% if product.image.present? %>
       <p><%= image_tag product.image.variant(resize_to_limit: [285, 285]).processed  %></p>
     <% end %>
-    <p class="title">
+    <p class="h3">
         <% if show_link %>
           <%= link_to product.name, product %>
         <% else %>
