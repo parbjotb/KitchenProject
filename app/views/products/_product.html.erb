@@ -1,24 +1,47 @@
 <% name = current_user.present? ? current_user.email : ' '%>
+<% if user_signed_in? %>
 <h3>Welcome to the shop <%= name %></h3>
+<% end %>
 <aside>
-  <% if product.image.present? %>
+  <div class="container">
+    <div class="row justify-content-center">
+       <% if product.image.present? %>
       <p><%= image_tag product.image.variant(resize_to_limit: [285, 285]).processed  %></p>
     <% end %>
-    <p class="h3">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <p class="h3">
         <% if show_link %>
           <%= link_to product.name, product %>
         <% else %>
           <%= product.name %>
         <% end %>
       </p>
-    <p class="h5">Price: <%= product.price %></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <p class="h5">Price: <%= product.price %></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
      <% if single_page %>
         <p class="h6"><%= product.description %></p>
-        <p class="h6">Quantity in stock:<%= product.quantity %></p>
+        <p class="h6">----Quantity in stock:<%= product.quantity %></p>
       <% else %>
         <p>Click on the product name to view description and quantity in stock</p>
       <% end %>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="row justify-content-center">
        <% if cart.include?(product) %>
       <%= button_to cart_path(product), method: :delete do %>
         Remove From Cart
@@ -30,5 +53,7 @@
         <%= button_tag 'Add to Cart' %>
       <% end %>
     <% end %>
+    </div>
+  </div>
 </aside>
 
